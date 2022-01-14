@@ -1,4 +1,4 @@
-let n = 900.0,
+let n = parseFloat(readline()),
   percentageArr = [0.15, 0.12, 0.1, 0.07, 0.04],
   firstEarn = n * percentageArr[0],
   secondEarn = n * percentageArr[1],
@@ -15,23 +15,23 @@ let n = 900.0,
   inPerStr = "Em percentual: ";
 
 if (0 < n && n <= 400.0) {
-  console.log(newSalaryStr + firstTotal.toFixed(2));
-  console.log(reAdSalaryStr + firstEarn.toFixed(2));
-  console.log(inPerStr + "15 %");
+  print(newSalaryStr + firstTotal.toFixed(2));
+  print(reAdSalaryStr + firstEarn.toFixed(2));
+  print(inPerStr + "15 %");
 } else if (400.01 <= n && n <= 800.0) {
-  console.log(newSalaryStr + secondTotal.toFixed(2));
-  console.log(reAdSalaryStr + secondEarn.toFixed(2));
-  console.log(inPerStr + "12 %");
+  print(newSalaryStr + secondTotal.toFixed(2));
+  print(reAdSalaryStr + secondEarn.toFixed(2));
+  print(inPerStr + "12 %");
 } else if (800.01 <= n && n <= 1200.0) {
-  console.log(newSalaryStr + thirdTotal.toFixed(2));
-  console.log(reAdSalaryStr + thirdEarn.toFixed(2));
-  console.log(inPerStr + "10 %");
+  print(newSalaryStr + thirdTotal.toFixed(2));
+  print(reAdSalaryStr + thirdEarn.toFixed(2));
+  print(inPerStr + "10 %");
 } else if (1200.01 <= n && n <= 2000.0) {
-  console.log(newSalaryStr + fouthTotal.toFixed(2));
-  console.log(reAdSalaryStr + fouthEarn.toFixed(2));
-  console.log(inPerStr + "7 %");
+  print(newSalaryStr + fouthTotal.toFixed(2));
+  print(reAdSalaryStr + fouthEarn.toFixed(2));
+  print(inPerStr + "7 %");
 } else if (2000.0 < n) {
-  console.log(newSalaryStr + fifthTotal.toFixed(2));
-  console.log(reAdSalaryStr + fifthEarn.toFixed(2));
-  console.log(inPerStr + "4 %");
+  print(newSalaryStr + fifthTotal.toFixed(2));
+  print(reAdSalaryStr + fifthEarn.toFixed(2));
+  print(inPerStr + "4 %");
 }
