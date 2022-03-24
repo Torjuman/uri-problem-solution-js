@@ -1,6 +1,6 @@
 let t = parseInt(readline());
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < t; i++) {
   let n = readline(),
     inputArr = n.split(" ").map((x) => +x),
     sum = 0;
